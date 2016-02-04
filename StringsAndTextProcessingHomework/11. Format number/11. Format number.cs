@@ -15,7 +15,6 @@ class FormatNumber
         Console.WriteLine("{0,15:X}", num);
         Console.WriteLine("{0,15:p}", num);
         Console.WriteLine("{0,15:E}", num);
-
     }
 }
 

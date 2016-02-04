@@ -10,6 +10,10 @@ class StringLength
 
         Console.WriteLine("Please enter some text (max 20 characters long: ");
         string text = Console.ReadLine();
+        if (text.Length == 20)
+        {
+            Console.WriteLine(text);
+        }
 
         if (text.Length < 20)
         {

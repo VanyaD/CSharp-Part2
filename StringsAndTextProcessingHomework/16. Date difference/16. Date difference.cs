@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Linq;
 using System.Globalization;
-using System.IO;
 
 class DateDifference
 {
@@ -11,14 +9,12 @@ class DateDifference
         //  day.month.year and calculates the number of days between them.
 
         Console.WriteLine("Please enter the first date (day.month.year): ");
-
         DateTime firstDate = DateTime.ParseExact(Console.ReadLine(), "dd.mm.yyyy", DateTimeFormatInfo.InvariantInfo);
 
         Console.WriteLine("Please enter the second date (day.month.year): ");
         DateTime secondDate = DateTime.ParseExact(Console.ReadLine(), "dd.mm.yyyy", DateTimeFormatInfo.InvariantInfo);
 
         double diff = (secondDate - firstDate).TotalDays;
-
         Console.WriteLine("{0}", diff);
     }
 }

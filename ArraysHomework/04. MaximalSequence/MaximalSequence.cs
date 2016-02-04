@@ -3,9 +3,9 @@
 // Problem 4. Maximal sequence
 // • Write a program that finds the maximal sequence of equal elements in an array.
 
-class MaximalSequence
+public class MaximalSequence
 {
-    static void Main()
+    public static void Main()
     {
         Console.WriteLine("Please enter the elements of the array, separated by space: ");
         string input = Console.ReadLine();

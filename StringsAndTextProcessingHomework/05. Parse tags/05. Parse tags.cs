@@ -15,9 +15,8 @@ class ParseTags
         int countOfSubText;
         string toBeReplaced = string.Empty;
         string res = text;
-        int i = 0;
         string substring = string.Empty;
-        
+
         int matchBegin = res.IndexOf(startOfUpcase, 0);
         while (matchBegin >= 0)
         {
@@ -29,7 +28,8 @@ class ParseTags
             res = res.Replace(toBeReplaced, substring);
             matchBegin = res.IndexOf(startOfUpcase);
         }
-         Console.WriteLine(res);                 
+
+        Console.WriteLine(res);
     }
 }
 

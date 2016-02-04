@@ -3,10 +3,9 @@
 // Problem 11. Binary search
 // • Write a program that finds the index of given element in a sorted array of integers by using the Binary search algorithm.
 
-
-class BinarySearch
+public class BinarySearch
 {
-    static void Main()
+    public static void Main()
     {
         Console.WriteLine("Please enter the elements of the array, separated by space: ");
 
@@ -24,6 +23,7 @@ class BinarySearch
 
         Array.Sort(nums);
         Console.Write("The sorted array is:");
+
         for (int i = 0; i < inputArr.Length; i++)
         {
             Console.Write(" {0} ", nums[i]);

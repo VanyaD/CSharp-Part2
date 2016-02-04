@@ -8,9 +8,9 @@
 
 using System;
 
-class Program
+public class FillInTheMatrix
 {
-    static void Main()
+    public static void Main()
     {
         Console.WriteLine("Please enter N: ");
         int n = int.Parse(Console.ReadLine());

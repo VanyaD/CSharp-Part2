@@ -9,7 +9,6 @@ class LeapYear
 
         Console.WriteLine("Please enter a year: ");
         int year = int.Parse(Console.ReadLine());
-
         bool isLeap = DateTime.IsLeapYear(year);
 
         Console.WriteLine("Year {0} is leap --> {1}", year, isLeap);

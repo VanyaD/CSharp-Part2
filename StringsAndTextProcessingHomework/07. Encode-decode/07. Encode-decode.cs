@@ -13,6 +13,7 @@ class EncodeDecode
 
         Console.WriteLine("Please enter some text: ");
         string text = Console.ReadLine();
+
         Console.WriteLine("Please enter a key: ");
         string cipher = Console.ReadLine();
 

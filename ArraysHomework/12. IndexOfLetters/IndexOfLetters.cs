@@ -4,10 +4,9 @@
 // • Write a program that creates an array containing all letters from the alphabet ( A-Z ).
 // • Read a word from the console and print the index of each of its letters in the array.
 
-
-class Program
+public class Program
 {
-    static void Main()
+    public static void Main()
     {
         Console.WriteLine("Please enter a word: ");
         string word = Console.ReadLine();

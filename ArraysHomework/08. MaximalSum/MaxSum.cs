@@ -4,14 +4,12 @@
 // • Write a program that finds the sequence of maximal sum in given array.
 // Can you do it with only one loop (with single scan through the elements of the array)? 
 
-class MaxSum
+public class MaxSum
 {
-    static void Main()
+    public static void Main()
     {
-        //string input = Console.ReadLine();
-        string input = "2, 3, -6, -1, 2, -1, 6, 4, -8, 8";
-        //string input = "5, 7, 10, 11, 12";
-        //string input = "-1, -2, -3, 5";
+        string input = Console.ReadLine();
+        //string input = "2, 3, -6, -1, 2, -1, 6, 4, -8, 8";
 
         string[] inputArr = input.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
@@ -28,7 +26,6 @@ class MaxSum
         int maxSum = int.MinValue;
         int maxSumIndex = -1;
         int maxSumCount = 0;
-
 
         for (int i = 0; i < inputArr.Length; i++)
         {
@@ -54,6 +51,7 @@ class MaxSum
         for (int i = 0; i < maxSumCount; i++)
         {
             Console.Write("{0}", nums[maxSumIndex - maxSumCount + i + 1]);
+
             if (i != maxSumCount - 1)
             {
                 Console.Write(", ");

@@ -1,8 +1,8 @@
 ﻿using System;
 
-class TriangleSurface
+public class TriangleSurface
 {
-    static void Main()
+    public static void Main()
     {
         /*•	Write methods that calculate the surface of a triangle by given:
             o	Side and an altitude to it;
@@ -16,25 +16,21 @@ class TriangleSurface
         Console.WriteLine("2: Three sides");
         Console.WriteLine("3: Two sides and an angle between them");
 
-        int choice = int.Parse(Console.ReadLine());
+        string choice = Console.ReadLine();
 
         switch (choice)
         {
-            case 1:
-
-                Console.WriteLine("Please enter your base length: ");
+            case "1":
+                Console.WriteLine("Please enter the base length: ");
                 int side = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("Please enter the height: ");
                 int height = int.Parse(Console.ReadLine());
 
-                AreaBySideAndAltitude(side, height);      
+                AreaBySideAndAltitude(side, height);
                 break;
-
-            case 2:
-
+            case "2":
                 Console.WriteLine("Please enter the sides of the triangle: ");
-
                 Console.WriteLine("First side = ");
                 int firstSide = int.Parse(Console.ReadLine());
 
@@ -46,9 +42,7 @@ class TriangleSurface
 
                 TriangleAreaByThreeSides(firstSide, secondSide, thirdSide);
                 break;
-
-            case 3:
-
+            case "3":
                 Console.WriteLine("First side = ");
                 int sideA = int.Parse(Console.ReadLine());
 
@@ -59,26 +53,25 @@ class TriangleSurface
                 int angle = int.Parse(Console.ReadLine());
 
                 AreaByTwoSidesAndAngle(sideA, sideB, angle);
-
                 break;
         }
     }
 
-    static void AreaByTwoSidesAndAngle(int sideA, int sideB, int angle)
+    public static void AreaByTwoSidesAndAngle(int sideA, int sideB, int angle)
     {
         double area = (sideA * sideB * Math.Sin(angle)) / 2.0;
         Console.WriteLine("The surface of the triangle is {0}.", area);
     }
 
-    static void TriangleAreaByThreeSides(int a, int b, int c)
+    public static void TriangleAreaByThreeSides(int a, int b, int c)
     {
-        
+
         double p = (a + b + c) / 2.0;
         double surface = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
         Console.WriteLine("The surface of the triangle is {0}.", surface);
     }
 
-    static void AreaBySideAndAltitude(int side, int altitude)
+    public static void AreaBySideAndAltitude(int side, int altitude)
     {
         double surface = (side * altitude) / 2.0;
         Console.WriteLine("The surface of the triangle is {0}.", surface);

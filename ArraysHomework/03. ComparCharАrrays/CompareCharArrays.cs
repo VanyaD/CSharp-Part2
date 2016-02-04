@@ -3,10 +3,9 @@
 // Problem 3. Compare char arrays
 // • Write a program that compares two  char  arrays lexicographically (letter by letter).
 
-
-class CompareCharArrays
+public class CompareCharArrays
 {
-    static void Main()
+    public static void Main()
     {
         Console.WriteLine("Please enter the elements of the first array: ");
         string inputFirst = Console.ReadLine();

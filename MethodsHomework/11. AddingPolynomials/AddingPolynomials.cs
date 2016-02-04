@@ -51,7 +51,6 @@ public class AddingPolynomials
                     Console.Write("{1}x^{0} ", i, print[i]);
                 }
             }
-
             else if (i == 0)
             {
                 Console.Write(" {0}", print[i]);

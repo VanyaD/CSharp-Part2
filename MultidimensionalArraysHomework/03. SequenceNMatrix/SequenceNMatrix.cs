@@ -5,10 +5,9 @@
 // as sets of several neighbour elements located on the same line, column or diagonal.
 // • Write a program that finds the longest sequence of equal strings in the matrix.
 
-
-class SequenceNMatrix
+public class SequenceNMatrix
 {
-    static void Main()
+    public static void Main()
     {
         Console.WriteLine("Please enter N: ");
         int n = int.Parse(Console.ReadLine());

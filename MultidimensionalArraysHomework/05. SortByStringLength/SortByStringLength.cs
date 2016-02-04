@@ -5,15 +5,15 @@
 // by the length of its elements (the number of characters composing them).
 
 
-    class SortByStringLength
+public class SortByStringLength
+{
+    public static void Main()
     {
-        static void Main()
-        {
-            Console.WriteLine("Please enter the elements of the string, separated by comma: ");
-            string input = Console.ReadLine();
-            string[] inputArr = input.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+        Console.WriteLine("Please enter the elements of the string, separated by comma: ");
+        string input = Console.ReadLine();
+        string[] inputArr = input.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-            Array.Sort(inputArr, (x, y) => x.Length.CompareTo(y.Length));
-            Console.WriteLine(string.Join(", ", inputArr));
-        }
+        Array.Sort(inputArr, (x, y) => x.Length.CompareTo(y.Length));
+        Console.WriteLine(string.Join(", ", inputArr));
     }
+}

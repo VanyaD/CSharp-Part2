@@ -2,10 +2,10 @@
  {
      using System;
 
-     // Write a program that sorts an array of integers using the Quick sort algorithm. 
-     class QuickSortByInt
+    // Write a program that sorts an array of integers using the Quick sort algorithm. 
+    public class QuickSortByInt
      {
-         static void Main()
+        public static void Main()
          {
              Console.Write("Please enter the number of elements in the array = ");
              int n = int.Parse(Console.ReadLine());

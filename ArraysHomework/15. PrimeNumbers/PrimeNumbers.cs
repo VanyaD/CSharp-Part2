@@ -3,10 +3,9 @@
 // Problem 15. Prime numbers
 // • Write a program that finds all prime numbers in the range [ 1...10 000 000 ]. Use the Sieve of Eratosthenes algorithm.
 
-
-class PrimeNumbers
+public class PrimeNumbers
 {
-    static void Main()
+    public static void Main()
     {
         bool[] аrr = new bool[10];
 

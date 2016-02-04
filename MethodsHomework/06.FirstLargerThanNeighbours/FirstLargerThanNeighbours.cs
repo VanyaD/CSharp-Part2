@@ -5,7 +5,6 @@
 // is larger than its neighbours, or  -1 , if there’s no such element.
 // • Use the method from the previous exercise.
 
-
 class FirstLargerThanNeighbours
 {
     static void Main()

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
+
 class WordsCount
 {
     static void Main()
@@ -25,7 +26,6 @@ class WordsCount
         foreach (string uniqueItem in uniqueItems)
         {
             wordsCount = words.Count(c => c == uniqueItem);
-
             Console.WriteLine("{0} --> {1} times", uniqueItem, wordsCount);
         }
     }

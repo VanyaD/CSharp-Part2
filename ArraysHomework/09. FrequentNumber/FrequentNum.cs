@@ -3,10 +3,9 @@
 // Problem 9. Frequent number
 // • Write a program that finds the most frequent number in an array.
 
-
-class FrequentNum
+public class FrequentNum
 {
-    static void Main()
+    public static void Main()
     {
         Console.WriteLine("Please enter the elements of the array, separated by space: ");
         string input = Console.ReadLine();

@@ -8,9 +8,9 @@
 //        3 7 11 15 
 //        4 8 12 16 
 
-class FillTheMatrix
+public class FillTheMatrix
 {
-    static void Main()
+    public static void Main()
     {
         Console.WriteLine("Please enter N: ");
         int n = int.Parse(Console.ReadLine());

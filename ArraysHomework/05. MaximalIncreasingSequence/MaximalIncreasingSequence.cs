@@ -3,12 +3,10 @@
 // Problem 5. Maximal increasing sequence
 // • Write a program that finds the maximal increasing sequence in an array.
 
-
-class MaximalIncreasingSequence
+public class MaximalIncreasingSequence
 {
-    static void Main()
+    public static void Main()
     {
-        // array you can copy-paste: 5 9 9 9 10 11 12 13 14 99 100
         Console.WriteLine("Please enter the elements of the array, separated by space: ");
         string input = Console.ReadLine();
         string[] inputArr = input.Split(' ');

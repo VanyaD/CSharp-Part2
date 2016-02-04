@@ -27,10 +27,10 @@ class LettersCount
         for (int i = 0; i < 26; i++)
         {
             if (results[i] != 0)
-            {               
+            {
                 Console.WriteLine("{0} --> {1} times", (char)(i + 97), results[i]);
-            }            
-        }           
+            }
+        }
     }
 }
 

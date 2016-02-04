@@ -9,7 +9,7 @@ class Workdays
           •	Consider that workdays are all days from Monday to Friday except a fixed list of public 
          * holidays specified preliminary as array.*/
 
-        Console.WriteLine("Please enter your end date in the format yyyy/mm/dd: ");
+        Console.WriteLine("Please enter an end date in the format yyyy/mm/dd: ");
         DateTime endDate = DateTime.Parse(Console.ReadLine());
 
         DateTime[] bankHolidays = { new DateTime(2015, 03, 01), new DateTime(2015, 05, 24) };
@@ -24,6 +24,7 @@ class Workdays
             {
                 numberOfDays++;
             }
+
             for (int i = 0; i < bankHolidays.Length; i++)
             {
                 if (day == bankHolidays[i])
@@ -32,6 +33,7 @@ class Workdays
                 }
             }
         }
+
         Console.WriteLine("Business days = {0}", numberOfDays);
     }
 }

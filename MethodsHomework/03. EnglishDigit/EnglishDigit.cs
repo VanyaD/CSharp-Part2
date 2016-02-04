@@ -7,6 +7,8 @@ class EnglishDigit
 {
     static void ReturnLastDigitAsWord(string a)
     {
+        Console.Write("The last digit is: ");
+
         switch (a[a.Length - 1])
         {
             case '0':

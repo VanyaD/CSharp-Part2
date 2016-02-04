@@ -3,10 +3,9 @@
 // Problem 10. Find sum in array
 // • Write a program that finds in given array of integers a sequence of given sum  S  (if present).
 
-
-class FindSumInArray
+public class FindSumInArray
 {
-    static void Main()
+    public static void Main()
     {
         Console.WriteLine("Please enter the elements of the array, separated by space: ");
         string input = Console.ReadLine();
