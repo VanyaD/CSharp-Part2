@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 
 class Program
 {
@@ -46,6 +41,7 @@ class Program
                 currentSpecialSum = 0;
             }
         }
+
         if (maxSpecialSum != 0)
         {
             Console.WriteLine(maxSpecialSum);

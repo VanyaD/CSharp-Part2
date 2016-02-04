@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 class MultiverseCommunication
 {
@@ -21,10 +20,12 @@ class MultiverseCommunication
                 {
                     temp = "A";
                 }
+
                 if (i == 11)
                 {
                     temp = "B";
                 }
+
                 if (i == 12)
                 {
                     temp = "C";

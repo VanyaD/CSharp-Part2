@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Text;
 using System.Linq;
-using System.Collections.Generic;
 
 class MovingLetters
 {
@@ -50,6 +49,7 @@ class MovingLetters
             {
                 int newPosition = k - (output.Length - i);
                 output.Insert(newPosition, output[i]);
+
                 if (newPosition < i)
                 {
                     output.Remove(i + 1, 1);

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Numerics;
 
 namespace _01.DurankulakNumbers
@@ -29,6 +28,7 @@ namespace _01.DurankulakNumbers
                     count++;
                 }
             }
+
             BigInteger[] nums = new BigInteger[count];
             BigInteger dec = 0;
             for (int i = 0; i < count; i++)

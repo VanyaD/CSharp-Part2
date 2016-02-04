@@ -74,6 +74,7 @@ class BunnyFactory
                     Console.WriteLine();
                     return;
                 }
+
                 nextSum = 0;
                 product = 1;
                 initialSum = 0;
@@ -88,7 +89,6 @@ class BunnyFactory
                         {
                             j = 0;
                         }
-
                     }
 
                     if (currentResult[j] == '1')
@@ -99,9 +99,9 @@ class BunnyFactory
                         {
                             j = 0;
                         }
-
                     }
                 }
+
                 nums.Clear();
                 count = 0;
 

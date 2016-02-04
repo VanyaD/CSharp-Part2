@@ -28,6 +28,7 @@ class MagicWords
                 words.Insert(position, words[i]);
                 words.RemoveAt(i);
             }
+
             if (position < i)
             {
                 words.Insert(position, words[i]);
@@ -45,12 +46,14 @@ class MagicWords
                 {
                     output.Append(words[j].Substring(i, 1));
                 }
+
                 if (i > words[j].Length)
                 {
                     continue;
                 }
             }
         }
+
         Console.WriteLine(output);
     }
 }

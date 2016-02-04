@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
 
@@ -23,7 +22,6 @@ class TRES4Numbers
             num = num / 9;
             output.Append(remainder);
         }
-
 
         for (int i = 0; i < output.Length; i++)
         {

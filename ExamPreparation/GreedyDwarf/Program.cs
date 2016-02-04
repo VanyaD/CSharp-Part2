@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Numerics;
-using System.IO;
-
 
 class GreedyDwarf
 {
@@ -17,6 +10,7 @@ class GreedyDwarf
         string input = Console.ReadLine();
         string[] inputArr = input.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
         int[] valley1 = new int[inputArr.Length];
+
         for (int i = 0; i < inputArr.Length; i++)
         {
             valley1[i] = int.Parse(inputArr[i]);
@@ -38,6 +32,7 @@ class GreedyDwarf
         {
             string[] currentPattern = allPatterns[q].Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
             int[] currentPatternAsNums = new int[currentPattern.Length];
+
             for (int j = 0; j < currentPattern.Length; j++)
             {
                 currentPatternAsNums[j] = int.Parse(currentPattern[j]);
@@ -55,6 +50,7 @@ class GreedyDwarf
                 maxNumberOfCoinsCollected = coinsCollected;
             }
         }
+
         Console.WriteLine(maxNumberOfCoinsCollected);
     }
 
@@ -75,6 +71,7 @@ class GreedyDwarf
                 {
                     break;
                 }
+
                 valley[index] = 0;
                 index = newIndex;
             }

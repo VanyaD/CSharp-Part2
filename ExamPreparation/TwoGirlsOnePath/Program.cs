@@ -53,7 +53,7 @@ class TwoGirlsOnePath
                 oldPositionM = positionM;
             }
 
-            // zapochva Dolly --------------------------------------------------
+            // Dolly
 
             if (offsetD > nums.Length)
             {
